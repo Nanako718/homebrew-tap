@@ -1,17 +1,17 @@
 class SpeedtestUstc < Formula
   desc "USTC network speed test CLI"
   homepage "https://github.com/Nanako718/speedtest-ustc"
-  version "1.0.2"
+  version "1.0.3"
   license "MIT"
 
   on_arm do
-    url "https://github.com/Nanako718/speedtest-ustc/releases/download/v1.0.2/speedtest-ustc-macos-arm64"
-    sha256 "e7d2390b6d62a97f2de164ef974a4084eb1313bfb3f50d21159b8606f6f81d5e"
+    url "https://github.com/Nanako718/speedtest-ustc/releases/download/v1.0.3/speedtest-ustc-macos-arm64"
+    sha256 "83bf79676afb11edf92c1242f12cd34929919ba6b283056cbbd2c7169284ab79"
   end
 
   on_intel do
-    url "https://github.com/Nanako718/speedtest-ustc/releases/download/v1.0.2/speedtest-ustc-macos-amd64"
-    sha256 "cb6c28cb92e76a8bbc2b63c94ba0f6efc52215feccfa6a081ae57f5e6bf24c74"
+    url "https://github.com/Nanako718/speedtest-ustc/releases/download/v1.0.3/speedtest-ustc-macos-amd64"
+    sha256 "78c2829b7df9e987c83eff44a2bbfe99fad4cf7a9af2e244bb62708c97da8804"
   end
 
   def install
