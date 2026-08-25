@@ -1,18 +1,22 @@
 class SpeedtestUstc < Formula
-  include Language::Python::Virtualenv
-
   desc "USTC network speed test CLI"
   homepage "https://github.com/Nanako718/speedtest-ustc"
-  url "https://github.com/Nanako718/speedtest-ustc/archive/refs/tags/v1.0.2.tar.gz"
-  sha256 "5f1df0ad0ce243228fe1cdb9ffbc72a14d37954553650b27147ff6be99c60454"
+  version "1.0.2"
   license "MIT"
 
-  depends_on "python@3.12"
+  on_arm do
+    url "https://github.com/Nanako718/speedtest-ustc/releases/download/v1.0.2/speedtest-ustc-macos-arm64"
+    sha256 "e7d2390b6d62a97f2de164ef974a4084eb1313bfb3f50d21159b8606f6f81d5e"
+  end
+
+  on_intel do
+    url "https://github.com/Nanako718/speedtest-ustc/releases/download/v1.0.2/speedtest-ustc-macos-amd64"
+    sha256 "cb6c28cb92e76a8bbc2b63c94ba0f6efc52215feccfa6a081ae57f5e6bf24c74"
+  end
 
   def install
-    venv = virtualenv_create(libexec, "python3.12")
-    venv.pip_install buildpath
-    bin.install_symlink Dir[libexec/"bin/speedtest-ustc"]
+    bin.install "speedtest-ustc-macos-arm64" => "speedtest-ustc" if Hardware::CPU.arm?
+    bin.install "speedtest-ustc-macos-amd64" => "speedtest-ustc" if Hardware::CPU.intel?
   end
 
   test do
