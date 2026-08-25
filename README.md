@@ -20,4 +20,4 @@ brew upgrade speedtest-ustc
 speedtest-ustc
 ```
 
-See [speedtest-ustc](https://github.com/Nanako718/speedtest) for full documentation.
+See [speedtest-ustc](https://github.com/Nanako718/speedtest-ustc) for full documentation.

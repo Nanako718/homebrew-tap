@@ -2,8 +2,8 @@ class SpeedtestUstc < Formula
   include Language::Python::Virtualenv
 
   desc "USTC network speed test CLI"
-  homepage "https://github.com/Nanako718/speedtest"
-  url "https://github.com/Nanako718/speedtest/archive/refs/tags/v1.0.2.tar.gz"
+  homepage "https://github.com/Nanako718/speedtest-ustc"
+  url "https://github.com/Nanako718/speedtest-ustc/archive/refs/tags/v1.0.2.tar.gz"
   sha256 "5f1df0ad0ce243228fe1cdb9ffbc72a14d37954553650b27147ff6be99c60454"
   license "MIT"
 
