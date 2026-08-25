@@ -1,23 +1,23 @@
 # Nanako718 Homebrew Tap
 
-## Install
+## 安装
 
 ```bash
 brew tap Nanako718/tap
 brew install speedtest-ustc
 ```
 
-## Upgrade
+## 升级
 
 ```bash
 brew update
 brew upgrade speedtest-ustc
 ```
 
-## Usage
+## 使用
 
 ```bash
 speedtest-ustc
 ```
 
-See [speedtest-ustc](https://github.com/Nanako718/speedtest-ustc) for full documentation.
+完整文档请参见 [speedtest-ustc](https://github.com/Nanako718/speedtest-ustc)。
