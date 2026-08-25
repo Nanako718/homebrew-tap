@@ -11,6 +11,9 @@ class SpeedtestUstc < Formula
 
   def install
     venv = virtualenv_create(libexec, "python3.12")
+    venv.pip_install "httpx"
+    venv.pip_install "rich"
+    venv.pip_install "plotext"
     venv.pip_install_and_link buildpath
   end
 
